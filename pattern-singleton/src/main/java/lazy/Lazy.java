@@ -1,14 +1,21 @@
 package lazy;
 
+/**
+ * 懒汉式
+ */
 public class Lazy {
     private Lazy() {
     }
 
     private static Lazy lazy;
 
-    public static synchronized Lazy getLazy() {
+    public static Lazy getLazy() {
         if (lazy == null) {
-            lazy = new Lazy();
+            synchronized (Lazy.class) {
+                if (lazy == null) {
+                    lazy = new Lazy();
+                }
+            }
         }
 
         return lazy;
