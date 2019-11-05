@@ -1,5 +1,6 @@
 import abstractfactory.AbstractFactory;
 import entity.bag.Bag;
+import entity.fruit.Apple;
 import entity.fruit.Fruit;
 import factory.fruit.AppleFactory;
 import factory.fruit.Factory;
@@ -33,5 +34,14 @@ public class FactoryTest {
 
         Bag bag = abstractFactory.getBag();
         bag.hello();
+    }
+
+    @Test
+    public void testForClass() throws IllegalAccessException, InstantiationException {
+        Class<?> appleClass = Apple.class;
+
+        Fruit fruit = (Fruit) appleClass.newInstance();
+
+        fruit.hello();
     }
 }
