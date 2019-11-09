@@ -12,6 +12,7 @@
         <module>pattern-factory</module>
         <module>pattern-singleton</module>
         <module>pattern-adapter</module>
+        <module>pattern-bridge</module>
     </modules>
 
     <dependencies>
