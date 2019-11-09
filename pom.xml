@@ -17,6 +17,8 @@
         <module>pattern-adapter</module>
         <!--桥接模式-->
         <module>pattern-bridge</module>
+        <!--装饰器模式-->
+        <module>pattern-decorator</module>
     </modules>
 
     <dependencies>
