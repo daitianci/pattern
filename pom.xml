@@ -19,6 +19,8 @@
         <module>pattern-bridge</module>
         <!--装饰器模式-->
         <module>pattern-decorator</module>
+        <!--代理模式-->
+        <module>pattern-proxy</module>
     </modules>
 
     <dependencies>
