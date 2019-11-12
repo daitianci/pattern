@@ -21,6 +21,8 @@
         <module>pattern-decorator</module>
         <!--代理模式-->
         <module>pattern-proxy</module>
+        <!--组合模式-->
+        <module>pattern-composite</module>
     </modules>
 
     <dependencies>
